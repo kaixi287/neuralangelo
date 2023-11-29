@@ -22,9 +22,10 @@ dir_path = Path(os.path.dirname(os.path.realpath(__file__))).parents[2]
 sys.path.append(dir_path.__str__())
 
 from projects.neuralangelo.scripts.convert_data_to_json import export_to_json  # NOQA
+sys.path.append(os.path.join(dir_path.__str__(), 'third_party'))
 
-from third_party.colmap.scripts.python.database import COLMAPDatabase  # NOQA
-from third_party.colmap.scripts.python.read_write_model import read_model, rotmat2qvec  # NOQA
+from colmap.scripts.python.database import COLMAPDatabase  # NOQA
+from colmap.scripts.python.read_write_model import read_model, rotmat2qvec  # NOQA
 
 
 def create_init_files(pinhole_dict_file, db_file, out_dir):
