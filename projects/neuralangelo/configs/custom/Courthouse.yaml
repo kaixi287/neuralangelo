@@ -1,0 +1,28 @@
+_parent_: projects/neuralangelo/configs/base.yaml
+data:
+    readjust:
+        center:
+        - 0.0
+        - 0.0
+        - 0.0
+        scale: 1.0
+    root: /content/drive/MyDrive/neuralangelo_datasets/tanks_and_temples/Courthouse
+    train:
+        image_size:
+        - 823
+        - 1500
+    type: projects.neuralangelo.data
+    val:
+        image_size:
+        - 300
+        - 546
+model:
+    appear_embed:
+        enabled: false
+    object:
+        sdf:
+            encoding:
+                coarse2fine:
+                    init_active_level: 8
+            mlp:
+                inside_out: false
