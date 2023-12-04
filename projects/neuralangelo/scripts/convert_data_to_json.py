@@ -21,7 +21,9 @@ import math
 dir_path = Path(os.path.dirname(os.path.realpath(__file__))).parents[2]
 sys.path.append(dir_path.__str__())
 
-from third_party.colmap.scripts.python.read_write_model import read_model, qvec2rotmat  # NOQA
+sys.path.append(os.path.join(dir_path.__str__(), 'third_party'))
+
+from colmap.scripts.python.read_write_model import read_model, qvec2rotmat  # NOQA
 
 
 def find_closest_point(p1, d1, p2, d2):

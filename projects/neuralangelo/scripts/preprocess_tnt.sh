@@ -17,4 +17,4 @@ mv Ignatius_COLMAP_SfM.log ${1}/Ignatius/Ignatius_COLMAP_SfM.log
 mv Ignatius_trans.txt ${1}/Ignatius/Ignatius_trans.txt
 
 echo "Compute intrinsics, undistort images and generate json files. This may take a while"
-python3 projects/neuralangelo/scripts/convert_tnt_to_json.py --tnt_path ${1}
+python3 projects/neuralangelo/scripts/convert_tnt_to_json.py --tnt_path "/content/drive/MyDrive/neuralangelo_datasets/tanks_and_temples"
