@@ -11,4 +11,4 @@
 # usage: tnt_download.sh <path_to_tnt>
 
 echo "Compute intrinsics, undistort images and generate json files. This may take a while"
-python3 projects/neuralangelo/scripts/convert_tnt_to_json.py --tnt_path "/content/drive/MyDrive/neuralangelo_datasets/tanks_and_temples"
+python3 projects/neuralangelo/scripts/convert_tnt_to_json.py --tnt_path "/content/drive/MyDrive/neuralangelo_datasets/Ignatius"
